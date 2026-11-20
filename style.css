@@ -123,3 +123,26 @@ footer b{color:#e8c97a}
   .about img{width:100%}
   nav{display:none}
 }
+* { box-sizing: border-box !important; }
+img { max-width: 100% !important; height: auto !important; }
+body { overflow-x: hidden !important; }
+header, .hero, .container, section {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+nav, .hero-buttons, .cards, .services {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  justify-content: center !important;
+}
+@media (max-width: 768px) {
+  header { flex-direction: column !important; text-align: center !important; }
+  header img { display: none !important; }
+  h1 { font-size: 28px !important; line-height: 1.4 !important; }
+  .hero-buttons a, nav a { width: 100% !important; text-align: center !important; }
+  .cards > div, .services > div { width: 100% !important; }
+}
